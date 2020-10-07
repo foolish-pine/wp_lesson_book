@@ -3,6 +3,9 @@
 function mytheme_setup() {
   // theme.min.cssの有効化
   add_theme_support('wp-block-styles');
+
+  // 縦横比を維持したレスポンシブを有効化
+  add_theme_support('responsive-embeds');
 }
 
 add_action('after_setup_theme', 'mytheme_setup');
