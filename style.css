@@ -103,3 +103,21 @@ h2 {
   border-left: solid 14px var(--basecolor);
   padding-left: 14px;
 }
+
+/* 横幅 */
+body {
+  margin: 0;
+}
+
+.mycontainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 740px) {
+  .mycontainer {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

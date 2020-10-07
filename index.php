@@ -9,7 +9,7 @@
 <?php wp_body_open() ?>
 <?php if (have_posts()): while(have_posts()): the_post(); ?>
 
-<article <?php post_class(); ?>>
+<article <?php post_class('mycontainer'); ?>>
 <h1><?php the_title(); ?></h1>
 
 <?php the_content(); ?>

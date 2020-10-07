@@ -51,3 +51,8 @@ h2 {
   border-left: solid 14px var(--basecolor);
   padding-left: 14px;
 }
+
+/* 横幅 */
+.wp-block {
+  max-width: calc(720px + 30px);
+}
