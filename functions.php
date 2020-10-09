@@ -10,6 +10,15 @@ function mytheme_setup() {
   // editor-style.cssの有効化
   add_theme_support('editor-styles');
   add_editor_style('editor-style.css');
+
+  //ページのタイトルを有効化
+  add_theme_support('title-tag');
+
+  // link, style, scriptのHTML5対応を有効化
+  add_theme_support('html5', array(
+    'style',
+    'script'
+  ));
 }
 
 add_action('after_setup_theme', 'mytheme_setup');
