@@ -10,7 +10,15 @@
 <?php if (have_posts()): while(have_posts()): the_post(); ?>
 
 <article <?php post_class('mycontainer'); ?>>
-<h1><?php the_title(); ?></h1>
+<div class="myposthead">
+  <?php the_category(); ?>
+  <h1><?php the_title(); ?></h1>
+
+  <time datetime="<?php echo
+  esc_attr(get_the_date(DATE_W3C)); ?>">
+  <?php echo esc_html(get_the_date()); ?>
+  </time>
+</div>
 
 <?php the_content(); ?>
 </article>
