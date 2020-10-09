@@ -23,8 +23,12 @@ function mytheme_setup() {
 
 add_action('after_setup_theme', 'mytheme_setup');
 
-// style.cssの読み込み
 function mytheme_enqueue() {
+  
+  // Dashiconsの読み込み
+  wp_enqueue_style('dashicons');
+  
+  // style.cssの読み込み
   wp_enqueue_style(
     'mytheme-style',
     get_stylesheet_uri(),

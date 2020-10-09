@@ -159,6 +159,15 @@ a:hover {
   font-size: var(--f6);
 }
 
+.post-categories::before {
+  content: "\f318";
+  font-family: "dashicons";
+  color: var(--basecolor);
+  font-size: var(--f2);
+  line-height: 1;
+  margin-right: 5px;
+}
+
 /* スクリーンリーダー用のテキスト */
 .screen-reader-text {
   border: 0;
@@ -182,10 +191,30 @@ a:hover {
 
 .nav-previous {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .nav-next {
   flex: 1;
   margin-left: 10px;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-previous::before {
+  content: "\f141";
+}
+
+.nav-next::after {
+  content: "\f139";
+}
+
+.nav-previous::before, .nav-next::after {
+  font-family: "dashicons";
+  color: var(--basecolor);
+  font-size: var(--f2);
+  line-height: 1;
 }
